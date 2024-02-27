@@ -10,3 +10,7 @@
 @import "layout/section_cards.css";
 @import "layout/section_local.css";
 @import "layout/section_contato.css";
+
+body {
+  background-color:red;
+}
