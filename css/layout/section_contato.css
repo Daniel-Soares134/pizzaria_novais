@@ -1,0 +1,58 @@
+.contato {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 90px 80px 80px 80px;
+    position: relative;
+    background-color: rgb(233, 233, 233);
+}
+
+.contato_title {
+    display: flex;
+    grid-column: 2/12;
+    grid-row-start: 2;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    justify-content: center;
+}
+
+.lista_contato {
+    display: flex;
+    grid-column: 2/12;
+    grid-row-start: 3;
+    gap: 350px;
+    margin-left: 70px;
+}
+
+
+.icon_contato {
+    width: 45px;
+    height: 45px;  
+}
+
+.icon_motoboy {
+    width: 55px;
+    height: 55px;
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+.div-contato {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: auto;
+}
+
+@media (max-width: 600px){
+    .lista_contato {
+        flex-direction: column;
+        grid-column: 1/12;
+        gap: 50px;
+    }
+
+    .contato_title{
+        grid-column: 1/12;
+    }
+
+}
